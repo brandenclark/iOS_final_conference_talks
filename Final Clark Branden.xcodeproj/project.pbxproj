@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4FE27122022A369A03C7FD /* Pods_Final_Clark_Branden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2DC32C92E8AE2D76810320 /* Pods_Final_Clark_Branden.framework */; };
+		841AEB7421CA8A8B00CA567B /* core.23.db in Resources */ = {isa = PBXBuildFile; fileRef = 841AEB7321CA8A8B00CA567B /* core.23.db */; };
+		841AEB7621CA8ACF00CA567B /* CitationDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7521CA8ACF00CA567B /* CitationDatabase.swift */; };
+		841AEB7821CA8D6C00CA567B /* ConferenceTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7721CA8D6C00CA567B /* ConferenceTalk.swift */; };
+		841AEB7A21CA8F5100CA567B /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7921CA8F5100CA567B /* Conference.swift */; };
 		8441101B21CA064E00C6C423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441101A21CA064E00C6C423 /* AppDelegate.swift */; };
 		8441101D21CA064E00C6C423 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441101C21CA064E00C6C423 /* ViewController.swift */; };
 		8441102021CA064E00C6C423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441101E21CA064E00C6C423 /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D75DFD195ADFDF2DEB04D3E /* Pods-Final Clark Branden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Clark Branden.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Final Clark Branden/Pods-Final Clark Branden.debug.xcconfig"; sourceTree = "<group>"; };
+		841AEB7321CA8A8B00CA567B /* core.23.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = core.23.db; sourceTree = "<group>"; };
+		841AEB7521CA8ACF00CA567B /* CitationDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitationDatabase.swift; sourceTree = "<group>"; };
+		841AEB7721CA8D6C00CA567B /* ConferenceTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceTalk.swift; sourceTree = "<group>"; };
+		841AEB7921CA8F5100CA567B /* Conference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
 		8441101721CA064E00C6C423 /* Final Clark Branden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Clark Branden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8441101A21CA064E00C6C423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8441101C21CA064E00C6C423 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,8 @@
 		8441102121CA065000C6C423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8441102421CA065000C6C423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8441102621CA065000C6C423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2DC32C92E8AE2D76810320 /* Pods_Final_Clark_Branden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_Clark_Branden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC1958FEDD38476AB3A12A8 /* Pods-Final Clark Branden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Clark Branden.release.xcconfig"; path = "Pods/Target Support Files/Pods-Final Clark Branden/Pods-Final Clark Branden.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4FE27122022A369A03C7FD /* Pods_Final_Clark_Branden.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67F2FEB19D9D312EB1D9FC77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D75DFD195ADFDF2DEB04D3E /* Pods-Final Clark Branden.debug.xcconfig */,
+				DCC1958FEDD38476AB3A12A8 /* Pods-Final Clark Branden.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		841AEB6F21CA861100CA567B /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				8441101A21CA064E00C6C423 /* AppDelegate.swift */,
+				8441101C21CA064E00C6C423 /* ViewController.swift */,
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		841AEB7021CA861800CA567B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8441101E21CA064E00C6C423 /* Main.storyboard */,
+				8441102321CA065000C6C423 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		841AEB7121CA861F00CA567B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				841AEB7521CA8ACF00CA567B /* CitationDatabase.swift */,
+				841AEB7721CA8D6C00CA567B /* ConferenceTalk.swift */,
+				841AEB7921CA8F5100CA567B /* Conference.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		841AEB7221CA863100CA567B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841AEB7321CA8A8B00CA567B /* core.23.db */,
+				8441102121CA065000C6C423 /* Assets.xcassets */,
+				8441102621CA065000C6C423 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		8441100E21CA064E00C6C423 = {
 			isa = PBXGroup;
 			children = (
 				8441101921CA064E00C6C423 /* Final Clark Branden */,
 				8441101821CA064E00C6C423 /* Products */,
+				67F2FEB19D9D312EB1D9FC77 /* Pods */,
+				9E85D6873436D59EB2E8E8DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +116,20 @@
 		8441101921CA064E00C6C423 /* Final Clark Branden */ = {
 			isa = PBXGroup;
 			children = (
-				8441101A21CA064E00C6C423 /* AppDelegate.swift */,
-				8441101C21CA064E00C6C423 /* ViewController.swift */,
-				8441101E21CA064E00C6C423 /* Main.storyboard */,
-				8441102121CA065000C6C423 /* Assets.xcassets */,
-				8441102321CA065000C6C423 /* LaunchScreen.storyboard */,
-				8441102621CA065000C6C423 /* Info.plist */,
+				841AEB7121CA861F00CA567B /* Model */,
+				841AEB7021CA861800CA567B /* View */,
+				841AEB6F21CA861100CA567B /* Contoller */,
+				841AEB7221CA863100CA567B /* Supporting Files */,
 			);
 			path = "Final Clark Branden";
+			sourceTree = "<group>";
+		};
+		9E85D6873436D59EB2E8E8DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD2DC32C92E8AE2D76810320 /* Pods_Final_Clark_Branden.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8441102921CA065000C6C423 /* Build configuration list for PBXNativeTarget "Final Clark Branden" */;
 			buildPhases = (
+				3EC84AE421C2AD63794BAC10 /* [CP] Check Pods Manifest.lock */,
 				8441101321CA064E00C6C423 /* Sources */,
 				8441101421CA064E00C6C423 /* Frameworks */,
 				8441101521CA064E00C6C423 /* Resources */,
+				BBB8CCB8F11A5E0F4B01E282 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,19 +194,70 @@
 			files = (
 				8441102521CA065000C6C423 /* LaunchScreen.storyboard in Resources */,
 				8441102221CA065000C6C423 /* Assets.xcassets in Resources */,
+				841AEB7421CA8A8B00CA567B /* core.23.db in Resources */,
 				8441102021CA064E00C6C423 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EC84AE421C2AD63794BAC10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Final Clark Branden-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB8CCB8F11A5E0F4B01E282 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Final Clark Branden/Pods-Final Clark Branden-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Final Clark Branden/Pods-Final Clark Branden-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8441101321CA064E00C6C423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841AEB7621CA8ACF00CA567B /* CitationDatabase.swift in Sources */,
 				8441101D21CA064E00C6C423 /* ViewController.swift in Sources */,
+				841AEB7A21CA8F5100CA567B /* Conference.swift in Sources */,
 				8441101B21CA064E00C6C423 /* AppDelegate.swift in Sources */,
+				841AEB7821CA8D6C00CA567B /* ConferenceTalk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +401,7 @@
 		};
 		8441102A21CA065000C6C423 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D75DFD195ADFDF2DEB04D3E /* Pods-Final Clark Branden.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +420,7 @@
 		};
 		8441102B21CA065000C6C423 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCC1958FEDD38476AB3A12A8 /* Pods-Final Clark Branden.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
