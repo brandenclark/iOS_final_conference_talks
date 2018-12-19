@@ -12,8 +12,9 @@
 		841AEB7621CA8ACF00CA567B /* CitationDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7521CA8ACF00CA567B /* CitationDatabase.swift */; };
 		841AEB7821CA8D6C00CA567B /* ConferenceTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7721CA8D6C00CA567B /* ConferenceTalk.swift */; };
 		841AEB7A21CA8F5100CA567B /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7921CA8F5100CA567B /* Conference.swift */; };
+		841AEB7C21CA928F00CA567B /* ConferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7B21CA928F00CA567B /* ConferenceViewController.swift */; };
+		841AEB7E21CA93DF00CA567B /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7D21CA93DF00CA567B /* SessionViewController.swift */; };
 		8441101B21CA064E00C6C423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441101A21CA064E00C6C423 /* AppDelegate.swift */; };
-		8441101D21CA064E00C6C423 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441101C21CA064E00C6C423 /* ViewController.swift */; };
 		8441102021CA064E00C6C423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441101E21CA064E00C6C423 /* Main.storyboard */; };
 		8441102221CA065000C6C423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8441102121CA065000C6C423 /* Assets.xcassets */; };
 		8441102521CA065000C6C423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441102321CA065000C6C423 /* LaunchScreen.storyboard */; };
@@ -25,9 +26,10 @@
 		841AEB7521CA8ACF00CA567B /* CitationDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitationDatabase.swift; sourceTree = "<group>"; };
 		841AEB7721CA8D6C00CA567B /* ConferenceTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceTalk.swift; sourceTree = "<group>"; };
 		841AEB7921CA8F5100CA567B /* Conference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
+		841AEB7B21CA928F00CA567B /* ConferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceViewController.swift; sourceTree = "<group>"; };
+		841AEB7D21CA93DF00CA567B /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		8441101721CA064E00C6C423 /* Final Clark Branden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Clark Branden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8441101A21CA064E00C6C423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8441101C21CA064E00C6C423 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8441101F21CA064E00C6C423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8441102121CA065000C6C423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8441102421CA065000C6C423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				8441101A21CA064E00C6C423 /* AppDelegate.swift */,
-				8441101C21CA064E00C6C423 /* ViewController.swift */,
+				841AEB7B21CA928F00CA567B /* ConferenceViewController.swift */,
+				841AEB7D21CA93DF00CA567B /* SessionViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -254,8 +257,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				841AEB7621CA8ACF00CA567B /* CitationDatabase.swift in Sources */,
-				8441101D21CA064E00C6C423 /* ViewController.swift in Sources */,
+				841AEB7C21CA928F00CA567B /* ConferenceViewController.swift in Sources */,
 				841AEB7A21CA8F5100CA567B /* Conference.swift in Sources */,
+				841AEB7E21CA93DF00CA567B /* SessionViewController.swift in Sources */,
 				8441101B21CA064E00C6C423 /* AppDelegate.swift in Sources */,
 				841AEB7821CA8D6C00CA567B /* ConferenceTalk.swift in Sources */,
 			);
