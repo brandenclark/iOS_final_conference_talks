@@ -41,9 +41,9 @@ class CitationDatabase {
     }
     
     // MARK: - Helpers
-    func test() {
+    func updatedDate() -> String{
         do {
-            let book = try dbQueue.inDatabase { (db: Database) -> String in
+            let date = try dbQueue.inDatabase { (db: Database) -> String in
                 let row = try Row.fetchOne(db,
                                            "select last_updated from updated;")
                 if row != nil {
@@ -54,20 +54,20 @@ class CitationDatabase {
                 
             }
             
-            print(book)
+            return date
         } catch {
-            print("Failure")
+            return "Failure"
         }
     }
     
     func conferenceList() -> [Conference] {
         do {
-            print()
             let conferences = try dbQueue.inDatabase { (db: Database) -> [Conference] in
                 var conferences = [Conference]()
                 
                 let rows = try Row.fetchCursor(db,
-                                               "select \(Conference.id) from \(Conference.databaseTableName) " +
+                                               "select \(Conference.id), \(Conference.abbr) " +
+                                                "from \(Conference.databaseTableName) " +
                                                 "order by \(Conference.orderBy)")
                 while let row = try rows.next() {
                     conferences.append(Conference(row: row))
@@ -81,5 +81,28 @@ class CitationDatabase {
             return [Conference]()
         }
     }
-
+    
+    func talksForConferenceId(_ conferenceId: Int) -> [ConferenceTalk] {
+        do {
+            let talks = try dbQueue.inDatabase { (db: Database) -> [ConferenceTalk] in
+                var talks = [ConferenceTalk]()
+                
+                let rows = try Row.fetchCursor(db,
+                                                "select \(ConferenceTalk.databaseSelectColumns) " +
+                                                "from \(ConferenceTalk.databaseTableName) " +
+                                                "where \(ConferenceTalk.databaseJoinWhere) ? " +
+                                                "order by \(ConferenceTalk.databaseOrderBy)",
+                                                arguments: [ conferenceId ])
+                while let row = try rows.next() {
+                    talks.append(ConferenceTalk(row: row))
+                }
+                
+                return talks
+            }
+            
+            return talks
+        } catch {
+            return [ConferenceTalk]()
+        }
+    }
 }

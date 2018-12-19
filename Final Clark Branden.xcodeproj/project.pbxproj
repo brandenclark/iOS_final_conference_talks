@@ -14,6 +14,10 @@
 		841AEB7A21CA8F5100CA567B /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7921CA8F5100CA567B /* Conference.swift */; };
 		841AEB7C21CA928F00CA567B /* ConferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7B21CA928F00CA567B /* ConferenceViewController.swift */; };
 		841AEB7E21CA93DF00CA567B /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7D21CA93DF00CA567B /* SessionViewController.swift */; };
+		841AEB8021CA9BD800CA567B /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB7F21CA9BD800CA567B /* TalkViewController.swift */; };
+		841AEB8221CAA47400CA567B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB8121CAA47400CA567B /* MainViewController.swift */; };
+		841AEB8421CAA67600CA567B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841AEB8321CAA67600CA567B /* WebKit.framework */; };
+		841AEB8621CAAFB200CA567B /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AEB8521CAAFB200CA567B /* AppInfoViewController.swift */; };
 		8441101B21CA064E00C6C423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441101A21CA064E00C6C423 /* AppDelegate.swift */; };
 		8441102021CA064E00C6C423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441101E21CA064E00C6C423 /* Main.storyboard */; };
 		8441102221CA065000C6C423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8441102121CA065000C6C423 /* Assets.xcassets */; };
@@ -28,6 +32,10 @@
 		841AEB7921CA8F5100CA567B /* Conference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
 		841AEB7B21CA928F00CA567B /* ConferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceViewController.swift; sourceTree = "<group>"; };
 		841AEB7D21CA93DF00CA567B /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		841AEB7F21CA9BD800CA567B /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
+		841AEB8121CAA47400CA567B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		841AEB8321CAA67600CA567B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		841AEB8521CAAFB200CA567B /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 		8441101721CA064E00C6C423 /* Final Clark Branden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Clark Branden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8441101A21CA064E00C6C423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8441101F21CA064E00C6C423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841AEB8421CAA67600CA567B /* WebKit.framework in Frameworks */,
 				3D4FE27122022A369A03C7FD /* Pods_Final_Clark_Branden.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,8 +72,11 @@
 			isa = PBXGroup;
 			children = (
 				8441101A21CA064E00C6C423 /* AppDelegate.swift */,
+				841AEB8521CAAFB200CA567B /* AppInfoViewController.swift */,
 				841AEB7B21CA928F00CA567B /* ConferenceViewController.swift */,
+				841AEB8121CAA47400CA567B /* MainViewController.swift */,
 				841AEB7D21CA93DF00CA567B /* SessionViewController.swift */,
+				841AEB7F21CA9BD800CA567B /* TalkViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -82,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				841AEB7521CA8ACF00CA567B /* CitationDatabase.swift */,
-				841AEB7721CA8D6C00CA567B /* ConferenceTalk.swift */,
 				841AEB7921CA8F5100CA567B /* Conference.swift */,
+				841AEB7721CA8D6C00CA567B /* ConferenceTalk.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,6 +142,7 @@
 		9E85D6873436D59EB2E8E8DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				841AEB8321CAA67600CA567B /* WebKit.framework */,
 				CD2DC32C92E8AE2D76810320 /* Pods_Final_Clark_Branden.framework */,
 			);
 			name = Frameworks;
@@ -259,9 +272,12 @@
 				841AEB7621CA8ACF00CA567B /* CitationDatabase.swift in Sources */,
 				841AEB7C21CA928F00CA567B /* ConferenceViewController.swift in Sources */,
 				841AEB7A21CA8F5100CA567B /* Conference.swift in Sources */,
+				841AEB8021CA9BD800CA567B /* TalkViewController.swift in Sources */,
 				841AEB7E21CA93DF00CA567B /* SessionViewController.swift in Sources */,
 				8441101B21CA064E00C6C423 /* AppDelegate.swift in Sources */,
 				841AEB7821CA8D6C00CA567B /* ConferenceTalk.swift in Sources */,
+				841AEB8621CAAFB200CA567B /* AppInfoViewController.swift in Sources */,
+				841AEB8221CAA47400CA567B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
